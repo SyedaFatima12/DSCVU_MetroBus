@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F4F4"
+    tools:context=".Drawable">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#CE1B1B"
+        android:id="@+id/background"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/profile"
+
+            android:src="@drawable/metro"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile"
+            android:text="Metro Bus Serveice"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#F8F7F7"
+            android:id="@+id/edit_Profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/home"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/home_icon"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/background">
+    </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/background"
+        android:layout_toRightOf="@id/home"
+        android:layout_marginLeft="5dp"
+        android:onClick="Home"
+
+        android:layout_marginTop="50dp"
+        android:text="Home"
+        android:textColor="#0a0a0a"
+        android:textSize="18dp">
+    </TextView>
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/home"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/Token_img"
+        android:src="@drawable/token">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Token_img"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/home"
+        android:onClick="MyToken"
+        android:layout_marginLeft="5dp"
+        android:text="My Token"
+        android:textColor="#0a0a0a"
+        android:textSize="18sp"
+        android:id="@+id/MyToken"
+        >
+    </TextView>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/logout"
+        android:layout_below="@id/Token_img"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/exit">
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LogOut"
+        android:layout_below="@id/MyToken"
+        android:layout_toRightOf="@id/logout"
+        android:id="@+id/txt_logout"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#0a0a0a"
+        >
+    </TextView>
+
+
+
+
+</RelativeLayout>

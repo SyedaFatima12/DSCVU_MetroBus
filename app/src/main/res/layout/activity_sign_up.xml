@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#F00808"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/text_login"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signet_email"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:errorEnabled="true"
+            app:errorIconTint="@color/black"
+            app:errorTextColor="@color/black"
+            app:hintTextColor="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Email"
+
+                android:backgroundTint="@color/black"
+
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/signet_pass"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/black"
+            android:layout_margin="20dp"
+            app:boxStrokeColor="@color/black"
+            app:passwordToggleEnabled="true"
+
+            app:errorIconTint="@color/black"
+            app:errorTextColor="@color/black"
+            app:hintTextColor="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Password"
+
+
+
+
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <Button
+            android:layout_width="150dp"
+            android:id="@+id/button_login"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black"
+            android:textStyle="bold"
+            android:text="Sign Up "
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            >
+
+        </Button>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

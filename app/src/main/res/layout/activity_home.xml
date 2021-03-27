@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F9F4FA"
+    tools:context=".Home">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F00808"
+            android:id="@+id/toolbar">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:id="@+id/drawable"
+                    android:src="@drawable/drawable"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="30dp"
+                    >
+
+                </ImageView>
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardElevation="15dp"
+            android:layout_margin="10px"
+            app:cardCornerRadius="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ViewFlipper
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view_fliper">
+
+                </ViewFlipper>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:columnOrderPreserved="false"
+            android:alignmentMode="alignMargins">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Token1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                app:cardCornerRadius="25dp"
+                android:layout_margin="25dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+
+                    android:layout_gravity="center"
+                    android:background="#fFf"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 Token"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold"
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/token">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/Token1_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="30"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Token2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+
+                android:layout_margin="25dp"
+                app:cardCornerRadius="25dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="#fFf"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 Token"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+
+                        android:textStyle="bold"
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/token">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/Token2_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="60"
+                        >
+
+                    </TextView>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/token3"
+                android:elevation="6dp"
+                android:layout_margin="25dp"
+                app:cardCornerRadius="25dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:background="#fFf"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 Token"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold"
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/token">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/token3_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="90"
+                        >
+
+                    </TextView>
+
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Recharge_card"
+                android:elevation="6dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="25dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:background="#fFf"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Card Recharge"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold"
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/metrocard">
+
+                    </ImageView>
+
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </GridLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
